@@ -22,19 +22,19 @@ let renderFuns = ( arrey,node) =>{
         let elTitle = document.createElement('h2');
         elTitle.textContent = item.name.common
         let elTitle2 = document.createElement('h6');
-        elTitle2.textContent = `Region: ${item.region}`
+        elTitle2.textContent = `Region - ${item.region}`
 
         let elTitle3 = document.createElement('h6');
-        elTitle3.textContent = `Capital: ${item.capital}`
+        elTitle3.textContent = `Capital - ${item.capital}`
 
-        let elTitl4 = document.createElement('h6');
-        elTitl4.textContent = `languages = ${item.languages.eng}`
+        let elTitle4 = document.createElement('h6');
+        elTitle4.textContent = `Population - ${item.population}`
 
         elItem.appendChild(elImg)
         elItem.appendChild(elTitle)
         elItem.appendChild(elTitle2);
         elItem.appendChild(elTitle3);
-        elItem.appendChild(elTitl4);
+        elItem.appendChild(elTitle4);
 
         node.appendChild(elItem)
         elInput.value = '';
